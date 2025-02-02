@@ -1,0 +1,83 @@
+
+
+
+* {
+    /* font-family: "Segoe UI"; */
+    font-family: Oswald-Regular, Oswald, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple Color Emoji",Helvetica,Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol"
+}
+
+hr {
+    border-bottom: 1px solid rgb(200, 194, 194);
+}
+
+
+
+.hide1 {        /* Неполное скрытие объекта (место под него остаётся) */
+    visibility: hidden;
+    
+}
+.hide2 {        /* Полное скрытие объекта (скрывается и объект и место под него) */
+    display: none !important;
+}   
+
+.hide3 {
+    max-height: 0;
+  }
+    
+
+
+
+
+
+
+.hovered_select_menu {
+    color: #c3392c !important;
+    background-color: #FEE6E3 !important;
+}
+.hovered_aside-items:hover {
+    background-color: #F6EFEE;
+    cursor: pointer;
+}
+
+.darkned {
+    filter: brightness(40%)
+}
+.darkned1_2 {
+    filter: brightness(40%)
+}
+
+
+
+
+
+
+input {
+    border: 1px solid gray;
+}
+
+.ramka {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* Цвета: */
+
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+
+.ser {
+    color: gray
+}
