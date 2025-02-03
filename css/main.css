@@ -3,44 +3,36 @@
 
 
 
-/* .container {
+.container {
+    width: 100%;
     max-width: 1220px;
     margin: 0 auto;
-} */
-
-.header {
+    padding: 0 15px;
+}
+.header__container {
     position: relative;
     z-index: 10;
-    /* margin: 0 auto; */
-}
-.header .container {
-    max-width: 1220px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 127px;
+    align-content: center;
+    /* margin-bottom: 32px; */
 }
-
-
-    .header__logo-container {
-        height: 129px;
-        align-content: center;
-        /* margin-left: 110px; */
+    .header__logo {
+        margin-top: 53px;
+        /* display: flex;
+        align-items: center; */
     }
-
-            .logo__image {
-                vertical-align: middle;
-            }
+        .logo__image {
+            vertical-align: middle;
+        }
 
 
     .header__menu {
+        margin-top: 71px;
         color: black;
-        height: 129px;
         align-content: center;
-        /* margin-right: 110px; */
     }
-
         .header__menu-list {
             list-style: none;
             display: flex;
@@ -48,6 +40,10 @@
             text-align: center;
             justify-content: end;
         }
+            .header__menu-item_selected {
+                border-bottom: 2px solid #FFFFFF;
+                padding-bottom: 8px;
+            }
                 .header__menu-link {
                     color: #FFFFFF;
                     font-weight: 400;
@@ -62,25 +58,23 @@
     display: flex;
     width: 100%;
     margin-bottom: 82px;
-    max-width: 1220px;
-    margin: 0 auto;
+
     /* justify-content:space-between; */
     /* box-sizing: border-box; */
 }
+    .welcome__container {
+        display: flex;
+        margin-bottom: 82px;
+    }
 
     .welcome__title {
         box-sizing: border-box;
-        height: 567px;
+        padding-top: 111px;
         align-content: center;
         width: 50%;
-        /* margin-left: 190px; */
-
-        /* width: 720px; */
-    }
-    .welcome__title-inline {
+        height: max-content;
         max-width: max-content;
         text-align: left;
-        
     }
         .welcome__title-main-text {
             max-width: 414px;
@@ -128,13 +122,16 @@
         /* min-width: 720px; */
 
         width: 50%;
+        height: 696px;
         /* max-width: 720px; */
-        margin-top: -127px;
+        /* padding-top: 63px; */
+        margin-top: -112px;
     }
 
         .welcome__img-eat {
             position: relative;
-            top: 143px;
+            /* top: 143px; */
+            top: 144px;
             left: -162px;
         }
 
