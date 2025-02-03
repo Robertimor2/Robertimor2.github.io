@@ -73,7 +73,7 @@
         margin-left: 80px;
     }
         .welcome__title-main-text {
-            max-width: 414px;
+            max-width: 415px;
             font-size: 60px;
             font-weight: 400;
             line-height: 60px;
@@ -161,6 +161,8 @@
             text-align: left;
             display: flex;
             align-items: center;
+            color: #000000;
+            width: max-content;
         }
             .card__arrow-right {
                 align-content: center;
@@ -229,6 +231,7 @@
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
+    width: max-content;
 }
 
 .before-after__info {
@@ -240,6 +243,12 @@
     /* background-color: #F2F2F2; */
     background-size: 100%;
     background-clip: content-box;
+    height: max-content;
+}
+.before-after__characteristics {
+    /* margin-right: 134px; */
+    /* box-sizing: content-box; */
+    height: max-content;
 }
 
 .before-after__description {
@@ -259,6 +268,45 @@
 }
 
 
+.before-after__mass, .before-after__days {
+    width: 162px;
+    height: 77px;
+}
+.before-after__mass {
+    background-image: url(/icon2/weight\ back1.svg);
+    background-repeat: no-repeat;
+}
+.before-after__days {
+    background-image: url(/icon2/weight\ back2.svg);
+    background-repeat: no-repeat;
+}
+.before-after__kg-title, .before-after__days-title {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 11px;
+}
+.before-after__kg-title {
+    padding: 15px 56px 0 56px;
+}
+.before-after__days-title {
+    padding: 15px 30px 0 30px;
+}
+.before-after__kg-text, .before-after__days-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.before-after__food-costs-title, .before-after__food-costs-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
 
 
 
@@ -276,14 +324,47 @@
 
 .before-after__slider {
     position: relative;
+    margin-left: 134px;
+    width: 690px;
+    box-sizing: content-box;
+    top: -264px;
 }
 .before-after__cats {
-    position: absolute;
-    right: 0;
+    position: relative;
+    /* right: 0; */
     display: flex;
+    right: -36px;
 }
 
+.before-after__cat-before-icon, .before-after__cat-after-icon {
+    position: relative;
+}
+.before-after__cat-before-icon {
+    height: 536px;
+}
+.before-after__cat-after-icon {
+    background-color: #EAEAEA;
+}
 
+.slider-line {
+    position: relative;
+    width: max-content;
+    top: -67px;
+    right: -36px;
+    display: flex;
+    align-items: center;
+}
+.slider-line__before-text, .slider-line__after-text {
+    font-size: 20px;
+    line-height: 29.64px;
+    font-weight: 400;
+}
+.slider-line__before-text {
+    margin-right: 24px;
+}
+.slider-line__after-text {
+    margin-left: 19.5px;
+}
 
 
 
