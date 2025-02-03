@@ -108,7 +108,6 @@
         background-clip: content-box;
         position: absolute;
         right: 0;
-        background-position-x: 200%;
         width: 50%;
         height: 696px;
         margin-top: -112px;
@@ -170,10 +169,9 @@
 
 
     
-/* .how-it-works__container {
-    display: flex;
-    justify-content: space-between;
-} */
+.how-it-works {
+    margin-bottom: 11px;
+}
 
 .how-it-works__title {
     font-size: 60px;
@@ -213,6 +211,78 @@
     font-size: 280px;
     line-height: 280px;
 }
+
+
+
+.before-after {
+    background-color: #F2F2F2;
+    position: relative;
+}
+
+.before-after__title {
+    position: relative;
+    /* top: -150px; */
+    top: -136px;
+    /* margin: 69px 0 76px 0; */
+    /* margin-top: 69px; */
+    margin-top: 205px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.before-after__info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 75px 0;
+    /* padding: 70px 0 75px 0; */
+    /* background-color: #F2F2F2; */
+    background-size: 100%;
+    background-clip: content-box;
+}
+
+.before-after__description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 436px;
+    color: #444444;
+    margin-bottom: 69px;
+}
+
+.before-after__mass-and-days {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+
+
+
+
+.before-after__food-costs {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+.before-after__slider {
+    position: relative;
+}
+.before-after__cats {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
 
 
 
