@@ -5,6 +5,7 @@
 
 .container {
     width: 100%;
+    box-sizing: content-box;
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 15px;
@@ -14,14 +15,12 @@
     z-index: 10;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     align-content: center;
-    /* margin-bottom: 32px; */
 }
     .header__logo {
         margin-top: 53px;
-        /* display: flex;
-        align-items: center; */
+
     }
         .logo__image {
             vertical-align: middle;
@@ -29,7 +28,6 @@
 
 
     .header__menu {
-        margin-top: 71px;
         color: black;
         align-content: center;
     }
@@ -46,6 +44,7 @@
             }
                 .header__menu-link {
                     color: #FFFFFF;
+                    text-transform: uppercase;
                     font-weight: 400;
                     font-size: 20px;
                     
