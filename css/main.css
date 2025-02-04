@@ -436,10 +436,11 @@
 
 
 .map {
-    background-image: url(/img/Rectangle\ 16.png);
-    background-repeat: no-repeat;
-    background-color: #EDEDEE;
     height: 400px;
+    position: relative;
+}
+.map_iframe {
+    position: absolute;
 }
 .map__container {
     height: inherit;
@@ -447,6 +448,7 @@
     align-items: center;
 }
 .map__invite {
+    position: relative;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-around;
