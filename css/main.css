@@ -63,7 +63,7 @@
     background-color: black; /* Цвет подчеркивания при исчезании линии*/
     transition: width 0.5s; /* Время эффекта */
 }
-.header__menu-link:not(.header__menu-link_selected):hover:after {
+.header__menu-link:not(.header__menu-item_selected .header__menu-link):hover:after {
     content: "";
     width: 100%;
     display: block;
