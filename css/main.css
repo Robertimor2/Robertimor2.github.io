@@ -263,7 +263,7 @@
 
 .before-after__mass-and-days {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 55px;
 }
 
@@ -275,6 +275,7 @@
 .before-after__mass {
     background-image: url(/icon2/weight\ back1.svg);
     background-repeat: no-repeat;
+    margin-right: 42px;
 }
 .before-after__days {
     background-image: url(/icon2/weight\ back2.svg);
@@ -301,19 +302,24 @@
     text-align: center;
 }
 
+.before-after__food-costs {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
 .before-after__food-costs-title, .before-after__food-costs-text {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
 }
-
-
-
-
-.before-after__food-costs {
-    display: flex;
-    justify-content: space-between;
+.before-after__food-costs-title {
+    margin-right: 63px;
+    text-transform: uppercase;
+    letter-spacing: 0.16px
 }
+
+
+
 
 
 
@@ -324,16 +330,18 @@
 
 .before-after__slider {
     position: relative;
-    margin-left: 134px;
+    /* margin-left: 134px; */
     width: 690px;
     box-sizing: content-box;
-    top: -264px;
+    /* top: -264px; */
 }
 .before-after__cats {
-    position: relative;
+    position: absolute;
     /* right: 0; */
     display: flex;
-    right: -36px;
+    /* right: -36px; */
+    right: -40px;
+    top: -264px;
 }
 
 .before-after__cat-before-icon, .before-after__cat-after-icon {
@@ -344,13 +352,17 @@
 }
 .before-after__cat-after-icon {
     background-color: #EAEAEA;
+    background-size: 100%;
+    background-clip: border-box;
 }
 
 .slider-line {
-    position: relative;
+    position: absolute;
     width: max-content;
-    top: -67px;
-    right: -36px;
+    /* top: -67px; */
+    bottom: -10px;
+    /* right: -36px; */
+    left: 118.5px;
     display: flex;
     align-items: center;
 }
@@ -358,13 +370,26 @@
     font-size: 20px;
     line-height: 29.64px;
     font-weight: 400;
+    text-transform: uppercase;
+
 }
 .slider-line__before-text {
     margin-right: 24px;
+    /* width: 49px; */
+    letter-spacing: 0.54px
+}
+.slider-line__line-img {
+    position: relative;
+    top: 1px;
+    /* height: 34px; */
+    /* padding-bottom: -0.5px; */
 }
 .slider-line__after-text {
     margin-left: 19.5px;
+    letter-spacing: 0.21px
 }
+
+
 
 
 

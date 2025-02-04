@@ -1,18 +1,13 @@
-<svg width="428" height="40" viewBox="0 0 428 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="16" width="428" height="6" rx="3" fill="#DCDCDC"/>
-<g filter="url(#filter0_d_2403_637)">
-<circle cx="214" cy="19" r="16.5" fill="white" stroke="#CDCDCD"/>
-<circle cx="214" cy="19" r="4" fill="#68B738"/>
-</g>
-<defs>
-<filter id="filter0_d_2403_637" x="194" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="1"/>
-<feGaussianBlur stdDeviation="1.5"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2403_637"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2403_637" result="shape"/>
-</filter>
-</defs>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428 36" width="428" height="36">
+	<title>slider</title>
+	<style>
+		.s0 { fill: #dcdcdc } 
+		.s1 { fill: #ffffff;stroke: #cdcdcd } 
+		.s2 { fill: #68b738 } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m3 15h422c1.7 0 3 1.3 3 3 0 1.7-1.3 3-3 3h-422c-1.7 0-3-1.3-3-3 0-1.7 1.3-3 3-3z"/>
+	<g>
+		<path fill-rule="evenodd" class="s1" d="m214 34.5c-9.1 0-16.5-7.4-16.5-16.5 0-9.1 7.4-16.5 16.5-16.5 9.1 0 16.5 7.4 16.5 16.5 0 9.1-7.4 16.5-16.5 16.5z"/>
+		<path fill-rule="evenodd" class="s2" d="m214 22c-2.2 0-4-1.8-4-4 0-2.2 1.8-4 4-4 2.2 0 4 1.8 4 4 0 2.2-1.8 4-4 4z"/>
+	</g>
 </svg>
