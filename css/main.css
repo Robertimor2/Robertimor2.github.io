@@ -504,20 +504,23 @@
 .footer__icon-nudge_instagram {
     width: 23px;
     height: 31px;
-    background-image: url("/icon2/icon_instagram.svg");
+    background-image: url("/icon2/icon_instagram_1.svg");
     /* background-position: 0 9px; */
     background-position: 0 3px;
     margin-right: 21px;
 }
 
 .footer__icon-nudge_instagram:hover {
-    background-color: #e11d74;
+    background-image: url("/icon2/icon_instagram_3.svg");
 }
 .footer__icon-nudge_facebook {
     width: 28px;
     height: 39px;
     background-image: url("/icon2/icon_facebook.svg");
     background-position: 0 3px;
+}
+.footer__icon-nudge_facebook:hover {
+    background-image: url("/icon2/icon_facebook_2.svg");
 }
 .footer__icon-nudge {
     /* height: 37px; */
@@ -550,7 +553,7 @@
   }
   
   .footer__icon-nudge::after {
-    background-color: #1e2e4f;
+    background-color: #a7a7a7;
   }
 
 
