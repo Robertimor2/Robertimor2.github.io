@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 22" width="30" height="22">
+	<title>icon_vkontakte (1)</title>
+	<defs>
+		<image  width="29" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAASCAMAAACQGyXoAAAAAXNSR0IB2cksfwAAAJZQTFRFZmZmQ3y7TXajRnqzSXitRHu5RnqzSHmuRHu5SHmuSHmwRHu4Q3y7RHu4RHu4SniqRXq1SnepSHmwRHu4SHmuRXu2R3qyRnq0SXisR3qySHmuRnqzSXirSnipS3epSXirRXu2SXmuSXisRnqzS3epSniqWG+HSHmvR3myZmZmS3enS3enRHy6TnWhT3SdR3qxRXu3TnWgCGmlDwAAADJ0Uk5TAP845W+J9eyXnal8huaYzvOrmpmtnbdlo2ielb3Ku7Rjn6LvibfRq/QBv8GWdX2mm3ZJjokrAAAA0UlEQVR4nG2SawuCMBSGz0npYlEIFUYWRkQgfej//4noUxARWWRIF6Tojpl2ztRgg23v3of3bGxDSBrS+IGMRV4uYAgQRl0N/iio7yzNv5kWXsIsPgUtPURl7U5Cuya0cmVYwXS/6oVp7UxOzUfQfdI6nojWjyDKISTh+uE3Nfa8bnoxMjyQNWNHQZTBlsuk7cpwKHLmVkLNTXK5snBnzX75JsNdh1OWk5rWSqieqGkpS1b9xWDBcpDuOJzThDOwZ2TZ2fOMoufEaazG8RdQJvAFCLwzlslCupgAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use  href="#img1" x="0" y="3"/>
+</svg>
