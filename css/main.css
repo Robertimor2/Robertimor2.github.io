@@ -262,13 +262,24 @@
 }
 
 
-
-.before-after__background-container {
-    background-color: #F2F2F2;
-}
-.before-after__container-info {
+.before-after {
     position: relative;
 }
+.before-after .background {
+    position: absolute;
+    width: 100%;
+    height: 462px;
+    /* top: 262px; */
+    left: 0;
+    z-index: -1;
+    background-color: #F2F2F2;
+}
+/* .before-after__background-container {
+    background-color: #F2F2F2;
+} */
+/* .before-after__container-info {
+    position: relative;
+} */
 
 .before-after__title {
     margin: 69px 0 76px 0;
@@ -279,13 +290,17 @@
 }
 
 .before-after__info {
-    position: relative;
+    /* position: relative;
     display: flex;
     justify-content: space-between;
     padding: 70px 0 75px 0;
     background-size: 100%;
     background-clip: content-box;
-    height: max-content;
+    height: max-content; */
+    padding: 70px 0 75px 0;
+    /* height: 317px; */
+    display: flex;
+    justify-content: space-between;
 }
 .before-after__characteristics {
     height: max-content;
@@ -366,66 +381,98 @@
 
 
 
-.before-after__slider {
+.slider {
     position: relative;
-    /* margin-left: 134px; */
-    width: 690px;
-    box-sizing: content-box;
-    /* top: -264px; */
 }
-.before-after__cats {
+.slider__wrapper {
     position: absolute;
-    /* right: 0; */
+    width: 660px;
+    top: -264px;  
+    right: 0;     /* 70 + 76 + 60 + 58*/
     display: flex;
-    /* right: -36px; */
-    right: -40px;
-    top: -264px;
+    align-items: center;
+    flex-direction: column;
+  }
+.slider__cats {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 50px;
 }
 
-.before-after__cat-before-icon, .before-after__cat-after-icon {
-    position: relative;
+.slider__cat-image {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+    top: 0;
+    left: 0;
 }
-.before-after__cat-before-icon {
-    height: 536px;
+.slider__cat-before-img {
+    clip-path: inset(0 50% 0 0);
+    z-index: 1;
 }
-.before-after__cat-after-icon {
-    background-color: #EAEAEA;
-    background-size: 100%;
-    background-clip: border-box;
+.slider__cat-after-img {
+    clip-path: inset(0 0 0 50%);
+    z-index: 2;
 }
 
 .slider-line {
-    position: absolute;
-    width: max-content;
-    /* top: -67px; */
-    bottom: -10px;
-    /* right: -36px; */
-    left: 118.5px;
+    z-index: 10;
     display: flex;
-    align-items: center;
+    gap: 3.63%;
+    width: 100%;
 }
+
+.slider__bar-wrapper {
+    display: flex;
+    gap: 3.63%;
+    width: 100%;
+}
+
+.slider__bar-form {
+    width: 100%;
+}
+.slider__bar-range {
+    -webkit-appearance: none; /* Убираем стандартный стиль для Webkit-браузеров */
+    -moz-appearance: none; /* Убираем стандартный стиль для Firefox */
+    appearance: none; /* Убираем стандартный стиль для других браузеров */
+    width: inherit; /* Задаем ширину слайдера */
+    height: 8px; /* Задаем высоту трека */
+    background: #dcdcdc; /* Цвет фона (трек слайдера) */
+    border-radius: 6px; /* Скругляем углы */
+    outline: none; /* Убираем фокусный контур */
+    pointer-events: auto;
+}
+.slider__bar-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    -moz-appearance: none; /* Для Firefox */
+    appearance: none; /* Для других браузеров */
+    width: 34px; /* Ширина ползунка */
+    height: 34px; /* Высота ползунка */
+    background: #68B738; /* Цвет ползунка */
+    border-radius: 50%; /* Скругляем ползунок в круг */
+    cursor: pointer; /* Курсор в виде руки */
+    box-shadow: 0 1px 3px 0 black;
+}
+
+
 .slider-line__before-text, .slider-line__after-text {
     font-size: 20px;
     line-height: 29.64px;
     font-weight: 400;
     text-transform: uppercase;
-
-}
+}   
 .slider-line__before-text {
-    margin-right: 24px;
-    /* width: 49px; */
     letter-spacing: 0.54px
 }
-.slider-line__line-img {
-    position: relative;
-    top: 1px;
-    /* height: 34px; */
-    /* padding-bottom: -0.5px; */
-}
 .slider-line__after-text {
-    margin-left: 19.5px;
     letter-spacing: 0.21px
-}
+} 
+
+
+
 
 
 .map {
@@ -537,8 +584,6 @@
     align-items: center;
     width: 163px;
 }
-
-
 
 
 

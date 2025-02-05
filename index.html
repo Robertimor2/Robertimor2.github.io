@@ -108,38 +108,47 @@
         </div>
     </div>
     </section>
+    
     <section class="before-after">
-    <div class="container before-after__container">
+    <div class="container before-after__title-container">
         <h2 class="before-after__title">Живой пример</h2>
     </div>
-    <div class="before-after__background-container">
-        <div class="container before-after__container-info">
-            <div class="before-after__info">
-                <div class="before-after__characteristics">
-                    <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-                    <div class="before-after__mass-and-days">
-                        <div class="before-after__mass before-after__mass-and-days-container">
-                            <h3 class="before-after__kg-title before-after__mass-and-days-title">5 КГ</h3>
-                            <p class="before-after__kg-text before-after__mass-and-days-text">снижение веса</p>
-                        </div>
-                        <div class="before-after__days before-after__mass-and-days-container">
-                            <h3 class="before-after__days-title before-after__mass-and-days-title">60 ДНЕЙ</h3>
-                            <p class="before-after__days-text before-after__mass-and-days-text">затрачено времени</p>
-                        </div>
+    <div class="background">
+        <div class="background__bottom"></div>
+    </div>
+    
+    <div class="container before-after__container-info">
+        <div class="before-after__info">
+            <div class="before-after__characteristics">
+                <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+                <div class="before-after__mass-and-days">
+                    <div class="before-after__mass before-after__mass-and-days-container">
+                        <h3 class="before-after__kg-title before-after__mass-and-days-title">5 КГ</h3>
+                        <p class="before-after__kg-text before-after__mass-and-days-text">снижение веса</p>
                     </div>
-                    <div class="before-after__food-costs">
-                        <h3 class="before-after__food-costs-title">Затраты на питание: </h3>
-                        <p class="before-after__food-costs-text">15 000 РУБ.</p>
+                    <div class="before-after__days before-after__mass-and-days-container">
+                        <h3 class="before-after__days-title before-after__mass-and-days-title">60 ДНЕЙ</h3>
+                        <p class="before-after__days-text before-after__mass-and-days-text">затрачено времени</p>
                     </div>
                 </div>
-                <div class="before-after__slider">
-                    <div class="before-after__cats">
-                        <img src="img/before-desktop.png" alt="" class="before-after__cat-before-icon">
-                        <img src="img/after-desktop.png" alt="" class="before-after__cat-after-icon">
+                <div class="before-after__food-costs">
+                    <h3 class="before-after__food-costs-title">Затраты на питание: </h3>
+                    <p class="before-after__food-costs-text">15 000 РУБ.</p>
+                </div>
+            </div>
+            <div class="slider before-after__slider">
+                <div class="slider__wrapper">
+                    <div class="slider__cats">
+                        <img src="img/sec4-fat_cat.jpg" alt="" class="slider__cat-image slider__cat-before-img">
+                        <img src="img/sec4-slim_cat.jpg" alt="" class="slider__cat-image slider__cat-after-img">
                     </div>
-                    <div class="slider-line before-after__slider-line">
+                    <div class="slider-line slider__slider-line">
                         <span class="slider-line__before-text">Было</span>
-                        <img src="icon/slider.svg" alt="" class="slider-line__line-img">
+                        <form action="" method="get" class="slider__bar-form">
+                            <label for="slider-bar-range"></label>
+                            <input type="range" min="0" max="100" value="50" class="slider__bar-range" id="slider-bar-range">
+                        </form>
+                        <!-- <img src="icon/slider.svg" alt="" class="slider-line__line-img"> -->
                         <span class="slider-line__after-text">Стало</span>
                     </div>
                 </div>
@@ -185,6 +194,11 @@
 </div>
 </footer>
 
+<div class="test-cat-container">
+    <div class="slider">
+        <div class="slider__btn"></div>
+    </div>
+</div>
 
 <script type="module" src="js/scripts.js"></script>
 </body>
