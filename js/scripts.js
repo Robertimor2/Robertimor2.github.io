@@ -27,8 +27,8 @@ headerMenuList.addEventListener("click", function(event) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const rangeInput = document.querySelector('.slider__bar-range');
-    const afterImage = document.querySelector('.slider__cat-before-img');
-    const beforeImage = document.querySelector('.slider__cat-after-img');
+    const beforeImage = document.querySelector('.slider__cat-before-img');
+    const afterImage = document.querySelector('.slider__cat-after-img');
     console.log(rangeInput);
     rangeInput.addEventListener('input', () => {
         console.log("123");
