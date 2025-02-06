@@ -23,23 +23,25 @@
 </head>
 <body>
 <header class="header">
-    <div class="container header__container">
-        <a href="#" class="header__logo logo">
-            <img src="icon/logo-desktop.svg" alt="" class="logo__image">
-        </a>
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li class="header__menu-item header__menu-item_selected">
-                    <a href="#" class="header__menu-link">ГЛАВНАЯ</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">КАТАЛОГ ПРОДУКЦИИ</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">ПОДБОР ПРОГРАММЫ</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="container">
+        <div class="header__container">
+            <a href="#" class="header__logo logo">
+                <img src="icon/logo-desktop.svg" alt="" class="logo__image">
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item header__menu-item_selected">
+                        <a href="#" class="header__menu-link">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">КАТАЛОГ ПРОДУКЦИИ</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">ПОДБОР ПРОГРАММЫ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 
@@ -121,19 +123,21 @@
         <div class="before-after__info">
             <div class="before-after__characteristics">
                 <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-                <div class="before-after__mass-and-days">
-                    <div class="before-after__mass before-after__mass-and-days-container">
-                        <h3 class="before-after__kg-title before-after__mass-and-days-title">5 КГ</h3>
-                        <p class="before-after__kg-text before-after__mass-and-days-text">снижение веса</p>
+                <div class="before-after__container-from-mass-and-days-and-costs">
+                    <div class="before-after__mass-and-days">
+                        <div class="before-after__mass before-after__mass-and-days-container">
+                            <h3 class="before-after__kg-title before-after__mass-and-days-title">5 КГ</h3>
+                            <p class="before-after__kg-text before-after__mass-and-days-text">снижение веса</p>
+                        </div>
+                        <div class="before-after__days before-after__mass-and-days-container">
+                            <h3 class="before-after__days-title before-after__mass-and-days-title">60 ДНЕЙ</h3>
+                            <p class="before-after__days-text before-after__mass-and-days-text">затрачено времени</p>
+                        </div>
                     </div>
-                    <div class="before-after__days before-after__mass-and-days-container">
-                        <h3 class="before-after__days-title before-after__mass-and-days-title">60 ДНЕЙ</h3>
-                        <p class="before-after__days-text before-after__mass-and-days-text">затрачено времени</p>
+                    <div class="before-after__food-costs">
+                        <h3 class="before-after__food-costs-title">Затраты на питание: </h3>
+                        <p class="before-after__food-costs-text">15 000 РУБ.</p>
                     </div>
-                </div>
-                <div class="before-after__food-costs">
-                    <h3 class="before-after__food-costs-title">Затраты на питание: </h3>
-                    <p class="before-after__food-costs-text">15 000 РУБ.</p>
                 </div>
             </div>
             <div class="slider before-after__slider">
@@ -148,7 +152,6 @@
                             <label for="slider-bar-range"></label>
                             <input type="range" min="0" max="100" value="50" class="slider__bar-range" id="slider-bar-range">
                         </form>
-                        <!-- <img src="icon/slider.svg" alt="" class="slider-line__line-img"> -->
                         <span class="slider-line__after-text">Стало</span>
                     </div>
                 </div>
