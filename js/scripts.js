@@ -3,6 +3,8 @@
 const headerMenuList = document.querySelector(".header__menu-list")
 const headerMenuItem = document.querySelectorAll(".header__menu-item")
 
+const headerDropdownBtn = document.querySelector(".header__dropdown-btn")       // Кнопка для раскрытия "бургер-меню"
+const headerDropdownList = document.querySelector(".header__dropdown-list")     // Список со скрытыми элементами навигации при нажатии на кнопку раскрытия "бургер-меню"
 
 // Функция для переключения стиля у кнопок навигации в header
 const updateHeaderMenuSelectedItem = function(e) {
@@ -24,14 +26,20 @@ headerMenuList.addEventListener("click", function(event) {
 })
 
 
+headerDropdownBtn.addEventListener("click", function(e) {
+    headerDropdownList.classList.toggle("hide2")
+})
 
+
+
+
+// Работа слайдера
 document.addEventListener('DOMContentLoaded', function() {
     const rangeInput = document.querySelector('.slider__bar-range');
     const beforeImage = document.querySelector('.slider__cat-before-img');
     const afterImage = document.querySelector('.slider__cat-after-img');
     console.log(rangeInput);
     rangeInput.addEventListener('input', () => {
-        console.log("123");
         //value от 0 до 100
         const value = rangeInput.value;
         //режет справа фото толстого кота на значение ползунка, чем больше тянешь влево, тем больше показывается фото кота
