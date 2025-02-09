@@ -28,6 +28,12 @@
             <a href="#" class="header__logo logo">
                 <img src="icon/logo-desktop.svg" alt="" class="logo__image">
             </a>
+            <a href="#" class="header__logo-mobile logo">
+                <img src="icon/logo-mobile1.svg" alt="" class="logo__image">
+            </a>
+            <a href="#" class="header__logo-mobile logo">
+                <img src="icon/logo-mobile2.svg" alt="" class="logo__image">
+            </a>
             <nav class="header__menu">
                 <ul class="header__menu-list">
                     <li class="header__menu-item header__menu-item_selected">
@@ -40,6 +46,20 @@
                         <a href="#" class="header__menu-link">ПОДБОР ПРОГРАММЫ</a>
                     </li>
                 </ul>
+                <div class="header__dropdown-container">
+                    <button class="header__dropdown-btn"><img src="icon/dropdownBtn.svg" alt=""></button>
+                    <ul class="header__dropdown-list">
+                        <li class="header__menu-item header__menu-item_selected">
+                            <a href="#" class="header__menu-link">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">КАТАЛОГ ПРОДУКЦИИ</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">ПОДБОР ПРОГРАММЫ</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
@@ -51,6 +71,8 @@
         <div class="welcome__title">
             <h1 class="welcome__title-main-text">Функциональное питание для котов</h1>
             <h3 class="welcome__title-text">Занялся собой? Займись котом!</h3>
+            <div class="welcome__bg-image"></div>
+            <img src="img/index-can.png" alt="" class="welcome__img-from-mobile">
             <button class="welcome__title-button">Подобрать программу</button>
         </div>
         <div class="welcome__right-image">
@@ -60,25 +82,31 @@
     </section>
     <section class="catalogs">
     <div class="container catalogs__container">
-        <div class="card catalogs__card ">
-            <div class="card__name">
-                <img src="icon/cat_back.svg" alt="" class="card__name-icon">
-                <h2 class="card__name-text">похудение</h2>
+        <div class="card catalogs__card "> 
+            <div class="card__left-content">
+                <div class="card__name">
+                    <img src="icon/cat_back.svg" alt="" class="card__name-icon card__name-icon_loss">
+                    <h2 class="card__name-text">похудение</h2>
+                </div>
+                <p class="card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <span class="card__type-catalog-container">
+                    <a href="#" class="card__type-catalog"><span class="card__type-catalog-text">каталог slim</span> <img src="icon/icon_arrow.svg" alt="" class="card__arrow-right"></a>
+                </span>
             </div>
-            <p class="card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <span class="card__type-catalog-container">
-                <a href="#" class="card__type-catalog"><span class="card__type-catalog-text">каталог slim</span> <img src="icon/icon_arrow.svg" alt="" class="card__arrow-right"></a>
-            </span>
+            <img src="icon/cat_back.svg" alt="" class="card__name-icon-right card__name-icon-right_loss">
         </div>   
         <div class="card catalogs__card">
-            <div class="card__name">
-                <img src="icon/cat_back (1).svg" alt="" class="card__name-icon">
-                <h2 class="card__name-text">набор массы</h2>
+            <div class="card__left-content">
+                <div class="card__name">
+                    <img src="icon/cat_back (1).svg" alt="" class="card__name-icon card__name-icon_gain">
+                    <h2 class="card__name-text">набор массы</h2>
+                </div>
+                <p class="card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <span class="card__type-catalog-container">
+                    <a href="#" class="card__type-catalog"><span class="card__type-catalog-text">каталог pro</span> <img src="icon/icon_arrow.svg" alt="" class="card__arrow-right"></a>
+                </span>
             </div>
-            <p class="card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <span class="card__type-catalog-container">
-                <a href="#" class="card__type-catalog"><span class="card__type-catalog-text">каталог pro</span> <img src="icon/icon_arrow.svg" alt="" class="card__arrow-right"></a>
-            </span>
+            <img src="icon/cat_back (1).svg" alt="" class="card__name-icon-right card__name-icon-right_gain">
         </div>            
     </div>
     </section>
@@ -176,6 +204,7 @@
 <footer class="footer">
 <div class="container footer__container">
     <img src="icon/footer-logo 2.svg" alt="" class="footer__logo">
+    <div class="footer__main-logo-container"></div>
     <div class="footer__social">
         <a href="#" class="footer__social-link footer__social-link_vkontakte">
             <svg width="30" height="22" viewBox="0 0 30 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +222,11 @@
             </svg>
         </a>
     </div>
-    <img src="icon/logo_HTML_footer.svg" alt="">
+    <img src="icon/html_academy_full.svg" alt="" class="footer__logo-html-academy_full">
+    <div class="footer_img-mobile-container">
+        <img src="icon/html_academy_1.svg" alt="" class="footer__logo-html-academy_1">
+        <img src="icon/html_academy_2.svg" alt="" class="footer__logo-html-academy_2">
+    </div>
 </div>
 </footer>
 
