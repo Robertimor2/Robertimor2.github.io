@@ -18,14 +18,32 @@ const updateHeaderMenuSelectedItem = function(e) {
     })
     // Добавляю модификатор "selected" выбранному элементу
     target.classList.add("header__menu-item_selected")
+
+    if (!headerDropdownList.classList.contains("hide2")) {
+        headerDropdownList.classList.add("hide2")
+    }
 }
 
 // Создаю обработчик на все элементы меню в header
 headerMenuList.addEventListener("click", function(event) {
     updateHeaderMenuSelectedItem(event)
 })
+headerDropdownList.addEventListener("click", function(event) {
+    updateHeaderMenuSelectedItem(event)
+})
 
 
+// headerMenuList.addEventListener("click", function(e) {
+//     const target = e.target.closest(".header__menu-item")
+//     // Если клик был вне контейнера с ссылкой, то игнор. И если выбранный элемент навигации уже был ранее выбран (есть модификатор "selected") 
+//     if (!target || target.classList.contains("header__menu-link_selected")) return  
+    
+    
+
+// })
+
+
+// При клике на бургер-меню (в телефонной версии)
 headerDropdownBtn.addEventListener("click", function(e) {
     headerDropdownList.classList.toggle("hide2")
 })

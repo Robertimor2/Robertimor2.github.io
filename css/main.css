@@ -145,9 +145,20 @@
 }
 .header__dropdown-list {
     position: absolute;
-    top: 55px;
+    top: 45px;
     list-style: none;
-    /* background-color: #FFFFFF; */
+    padding: 5px 6px 10px 6px;
+    background-color: #dbdada;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 11px rgba(55, 207, 40, 0.15) inset, 0px 0px 10px 5px rgba(55, 207, 40, 0.2);
+    /* box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
+    /* box-shadow:
+    inset 0 -3em 3em rgb(0 200 0 / 30%),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(200 0 0 / 60%); */
     /* display: none; */
     display: flex;
     flex-direction: column;
@@ -217,6 +228,7 @@
     }
     .header__menu-link:not(.header__menu-item_selected .header__menu-link):hover:after {
         background-color: #68B738; /* Цвет подчеркивания при появлении линии*/
+        left: -3px;
     }
 }
 
@@ -267,9 +279,6 @@
     background-clip: content-box;
     position: absolute;
     z-index: -1;
-    /* right: 0; */
-    /* width: 50%; */
-    /* margin-top: -112px; */
 }
 .welcome__img-from-mobile {
     display: none;
@@ -797,9 +806,7 @@
     margin-top: 69px;
     margin-bottom: 76px;
 }
-/* .before-after__container-info {
-    position: relative;
-} */
+
 
 .before-after__title {
     font-size: 60px;
@@ -893,7 +900,7 @@
     position: absolute;
     width: 660px;
     top: -264px;  
-    right: 0;     /* 70 + 76 + 60 + 58*/
+    right: 0;   
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1013,7 +1020,6 @@
     .before-after__food-costs {
         flex-direction: column;
         text-align: right;
-        /* align-items: flex-end; */
     }
     .before-after__food-costs-title {
         margin-right: unset;
@@ -1062,7 +1068,6 @@
         border: unset;
     }
     .before-after .background {
-        /* height: 906px; */
         height: 100%;
         background-color: #EAEAEA;
     }
@@ -1361,8 +1366,6 @@
         width: 128px;
         height: 25px;
         box-sizing: content-box;
-        /* padding-bottom: 32px;
-        border-bottom: 1px solid #D9D9D9; */
     }
     .footer__logo:after {
         content: "";
