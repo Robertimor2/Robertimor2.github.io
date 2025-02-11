@@ -1,0 +1,389 @@
+.before-after {
+    position: relative;
+}
+.before-after .background {
+    position: absolute;
+    width: 100%;
+    height: 462px;
+    /* top: 262px; */
+    left: 0;
+    z-index: -1;
+    background-color: #F2F2F2;
+}
+.before-after__title-container {
+    margin-top: 69px;
+    margin-bottom: 76px;
+}
+
+
+.before-after__title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    width: max-content;
+}
+
+.before-after__info {
+    padding: 70px 0 75px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.before-after__characteristics {
+    height: max-content;
+}
+
+.before-after__description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 436px;
+    color: #444444;
+    margin-bottom: 69px;
+}
+
+.before-after__mass-and-days {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.before-after__mass-and-days-container {
+    width: 162px;
+    height: 77px;
+
+    border: 1px solid #CDCDCD;
+    border-radius: 5%;
+    align-content: flex-end;
+}
+
+
+.before-after__mass {
+    margin-right: 42px;
+}
+
+.before-after__mass-and-days-title {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+
+.before-after__mass-and-days-text {
+    background-color: #FFFFFF;
+    box-sizing: content-box;
+    width: fit-content;
+    padding: 0 7px;
+    margin: 0 auto -6px auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #444444;
+}
+
+.before-after__food-costs {
+    display: flex;
+}
+
+.before-after__food-costs-title, .before-after__food-costs-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.before-after__food-costs-title {
+    margin-right: 63px;
+    text-transform: uppercase;
+    letter-spacing: 0.16px
+}
+
+
+
+
+
+.slider {
+    position: relative;
+}
+.slider__wrapper {
+    position: absolute;
+    width: 660px;
+    top: -264px;  
+    right: 0;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.slider__cats {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.slider__cat-image {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+}
+.slider__cat-before-img {
+    clip-path: inset(0 50% 0 0);
+    z-index: 1;
+}
+.slider__cat-after-img {
+    clip-path: inset(0 0 0 50%);
+    z-index: 2;
+}
+
+.slider-line {
+    z-index: 10;
+    display: flex;
+    gap: 3.63%;
+    width: 100%;
+}
+
+.slider__bar-wrapper {
+    display: flex;
+    gap: 3.63%;
+    width: 100%;
+}
+
+.slider__bar-form {
+    width: 100%;
+}
+.slider__bar-range {
+    -webkit-appearance: none; /* Убираем стандартный стиль для Webkit-браузеров */
+    -moz-appearance: none; /* Убираем стандартный стиль для Firefox */
+    appearance: none; /* Убираем стандартный стиль для других браузеров */
+    width: inherit; /* Задаем ширину слайдера */
+    height: 8px; /* Задаем высоту трека */
+    background: #dcdcdc; /* Цвет фона (трек слайдера) */
+    border-radius: 6px; /* Скругляем углы */
+    outline: none; /* Убираем фокусный контур */
+    pointer-events: auto;
+}
+.slider__bar-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    -moz-appearance: none; /* Для Firefox */
+    appearance: none; /* Для других браузеров */
+    width: 34px; /* Ширина ползунка */
+    height: 34px; /* Высота ползунка */
+    background: #68B738; /* Цвет ползунка */
+    border-radius: 50%; /* Скругляем ползунок в круг */
+    cursor: pointer; /* Курсор в виде руки */
+    box-shadow: 0 1px 3px 0 black;
+}
+
+
+.slider-line__before-text, .slider-line__after-text {
+    font-size: 20px;
+    line-height: 29.64px;
+    font-weight: 400;
+    text-transform: uppercase;
+}   
+.slider-line__before-text {
+    letter-spacing: 0.54px
+}
+.slider-line__after-text {
+    letter-spacing: 0.21px
+} 
+
+
+
+
+@media (max-width: 1050px) {
+    .before-after .background {
+        bottom: 0;
+    }
+    .before-after__title-container {
+        margin-top: 90px;
+        margin-bottom: 63px;
+    }
+    .before-after__container-info {
+        padding-bottom: 64px;
+    }
+    .before-after__info {
+        flex-direction: column;
+        align-items: center;
+        padding: unset;
+    }
+    .before-after__characteristics {
+        display: flex;
+        flex-direction: column;     
+    }
+    .before-after__description {
+        max-width: unset;
+    }
+    .before-after__container-from-mass-and-days-and-costs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .before-after__mass-and-days {
+        margin-bottom: unset;
+    }
+    .before-after__food-costs {
+        flex-direction: column;
+        text-align: right;
+    }
+    .before-after__food-costs-title {
+        margin-right: unset;
+    }
+    .slider {
+        margin-top: 59px;
+    }
+    .slider__wrapper {
+        position: unset;
+        width: 660px;
+        top: unset;  
+        right: unset;
+        display: flex;
+    }
+}
+@media (max-width: 960px) {
+    .before-after {
+        padding-top: 43px;
+        border-top: 1px solid #E6E6E6;
+    }
+    .before-after__title-container {
+        margin-top: unset;
+    }
+}
+
+@media (max-width: 680px) {
+    .before-after__container-from-mass-and-days-and-costs {
+        flex-direction: column;
+    }
+    .before-after__mass-and-days {
+        margin-bottom: 30px;
+    }
+    .before-after__food-costs {
+        flex-direction: row;
+        gap: 15px;
+    }
+    .slider {
+        margin-top: unset;
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 500px) {
+    .before-after {
+        padding-top: unset;
+        border: unset;
+    }
+    .before-after .background {
+        height: 100%;
+        background-color: #EAEAEA;
+    }
+    .before-after__title-container {
+        margin-top: unset;
+        padding-top: 27px;
+    }
+    .before-after__mass-and-days-text {
+        background-color: #EAEAEA;
+    }
+    .slider {
+        transform: unset;
+    }
+    .slider__wrapper {
+        width: 350px;
+        height: 400px;
+    }
+    .slider__cats {
+        top: -80px;
+        overflow: unset;
+        margin-bottom: unset;
+    }
+    .slider-line {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 385px) {
+    .before-after__title-container {
+        margin-bottom: 33px;
+    }
+    .before-after__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .before-after__description {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .before-after__mass {
+        margin-right: 31px;
+    }
+    .before-after__mass-and-days-container {
+        width: 124px;
+        height: 64px;
+        background-image: unset;
+        border: 1px solid #CDCDCD;
+        border-radius: 5%;
+        align-content: flex-end;
+    }
+    .before-after__mass-and-days-title {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+    .before-after__kg-title {
+        padding: unset;
+    }
+    .before-after__days-title {
+        padding: unset;
+    }
+    .before-after__mass-and-days-text {
+        font-size: 12px;
+        line-height: 12px;
+        background-color: #EAEAEA;
+        box-sizing: content-box;
+        max-width: 60px;
+        padding: 0 7px;
+        margin: 0 auto -11px auto;;
+    }
+
+    .before-after__food-costs-title, .before-after__food-costs-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .slider__wrapper {
+        width: 311px;
+        height: 232px;
+        margin-top: 89px;
+    }
+    .slider__cats {
+        height: 232px;
+        top: -47px;
+    }
+    .slider-line {
+        width: fit-content;
+        max-width: 228px;
+        margin: 0 auto
+    }
+    .slider span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .slider__bar-form {
+        width: unset;
+    }
+    .slider__bar-range {
+        width: 84px; /* Задаем ширину слайдера */
+        height: 14px; /* Задаем высоту трека */
+        background: #FFFFFF; /* Цвет фона (трек слайдера) */
+    }
+    .slider__bar-range::-webkit-slider-thumb {
+        width: 21px; /* Ширина ползунка */
+        height: 21px; /* Высота ползунка */
+        background: #68B738; /* Цвет ползунка */
+        box-shadow: 0 1px 3px 0 #CDCDCD;
+    }
+}
