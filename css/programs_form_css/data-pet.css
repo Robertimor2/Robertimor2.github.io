@@ -1,0 +1,78 @@
+
+.data-pet__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 56px;
+}
+.data-pet__description {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    max-width: 323px;
+    margin-bottom: 66px;
+}
+
+.data-pet__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+}
+.data-pet__personal-data {
+    width: 568px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.data-pet__item {
+    display: flex;
+    align-items: center;
+}
+.data-pet__data-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 29.64px;
+    font-weight: 400;
+    margin-right: 14px;
+    color: #444444;
+    white-space: nowrap;
+    /* width: fit-content; */
+    /* width: 100px; */
+}
+.data-pet__data-input {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #E7E7E7;
+    color: #444444;
+}
+
+
+.data-pet__purpose-program {
+    width: 568px;
+    height: 200px;
+    border: 1px solid #E7E7E7;
+    padding: 25px 0 29px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.data-pet__purpose-program-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.data-pet__program-input {
+    width: 40px;
+    height: 40px;
+}
+.data-pet__program-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 29.64px;
+    font-weight: 400;
+    color: #222222;
+}
+
+

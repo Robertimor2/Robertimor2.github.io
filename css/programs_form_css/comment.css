@@ -1,0 +1,17 @@
+.comment {
+    margin-bottom: 67px;
+}
+.comment__title {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+}
+.comment__textarea {
+    border: 1px solid #E7E7E7;
+    font-size: 20px;
+    color: #444444;
+    width: 100%;
+    min-height: 174px;
+    padding: 10px 19px;
+}

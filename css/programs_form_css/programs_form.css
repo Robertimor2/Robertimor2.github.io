@@ -1,0 +1,9 @@
+@import "../base/reset.css";
+@import "../base/base.css";
+@import "./header.css";
+@import "./data-pet.css";
+@import "./contact-data-owner.css";
+@import "./comment.css";
+@import "./additional.css";
+@import "./map.css";
+@import "./footer.css";
