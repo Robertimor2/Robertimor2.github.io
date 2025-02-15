@@ -52,9 +52,9 @@
 .contact-data-owner__data-input::placeholder {
     text-transform: uppercase;
 }
-.contact-data-owner__telephone-input {
+/* .contact-data-owner__telephone-input {
     padding-left: 25px;
-}
+} */
 .contact-data-owner__num-7 {
     font-size: 20px; 
     position: absolute;
