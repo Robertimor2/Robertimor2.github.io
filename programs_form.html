@@ -72,87 +72,91 @@
     <div class="container data-pet__container">
         <h1 class="data-pet__title">Подбор программы</h1>
         <h3 class="data-pet__description">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
-        <form action="" class="data-pet__form">
+        <div class="data-pet__content">
             <div class="data-pet__personal-data">
                 <div class="data-pet__item">
-                    <span class="data-pet__name-text data-pet__data-text">Имя:*</span>
-                    <input type="text" class="data-pet__name-input data-pet__data-input">
+                    <label for="name" class="data-pet__name-label data-pet__data-label">Имя:*</label>
+                    <input type="text" id="name" name="name" form="data-forms" class="data-pet__name-input data-pet__data-input">
                 </div>
                 <div class="data-pet__item">
-                    <span class="data-pet__weight-text data-pet__data-text">Вес (кг):*</span>
-                    <input type="text" class="data-pet__weight-input data-pet__data-input">
+                    <label for="weight" class="data-pet__weight-label data-pet__data-label">Вес (кг):*</label>
+                    <input type="number" id="weight" name="weight" form="data-forms" class="data-pet__weight-input data-pet__data-input">
                 </div>
                 <div class="data-pet__item">
-                    <span class="data-pet__age-text data-pet__data-text">Возраст (лет):</span>
-                    <input type="text" class="data-pet__age-input data-pet__data-input">
+                    <label for="age" class="data-pet__age-label data-pet__data-label">Возраст (лет):</label>
+                    <input type="number" id="age" name="age" form="data-forms" class="data-pet__age-input data-pet__data-input">
                 </div>
             </div>
             <div class="data-pet__purpose-program">
+                <hr class="data-pet__hr-top">
                 <div class="data-pet__purpose-program-item">
-                    <input type="radio" name="" id="" class="data-pet__pohydenie-input data-pet__program-input">
-                    <span class="data-pet__pohydenie-text data-pet__program-text">похудение</span>
+                    <input type="radio" value="pohydenie" name="purpose-program" id="pohydenie" form="data-forms" class="data-pet__pohydenie-input data-pet__program-input" checked>
+                    <label for="pohydenie" class="data-pet__pohydenie-label data-pet__program-label">похудение</label>
                 </div>
                 <div class="data-pet__purpose-program-item">
-                    <input type="radio" name="" id="" class="data-pet__nabor-mass-input data-pet__program-input">
-                    <span class="data-pet__nabor-mass-text data-pet__program-text">Набор массы</span>
+                    <input type="radio" value="abor-mass" name="purpose-program" id="nabor-mass" form="data-forms" class="data-pet__nabor-mass-input data-pet__program-input">
+                    <label for="nabor-mass" class="data-pet__nabor-mass-label data-pet__program-label">Набор массы</label>
                 </div>
                 <div class="data-pet__purpose-program-item">
-                    <input type="radio" name="" id="" class="data-pet__other-input data-pet__program-input">
-                    <span class="data-pet__other-text data-pet__program-text">Не знаю (Нужен ваш совет)</span>
+                    <input type="radio" value="other" name="purpose-program" id="other" form="data-forms" class="data-pet__other-input data-pet__program-input">
+                    <label for="other" class="data-pet__other-label data-pet__program-label">Не знаю (Нужен ваш совет)</label>
                 </div>
+                <hr class="data-pet__hr-bottom">
             </div>
-        </form>
+        </div>
     </div>
     </section>
+    
     <section class="contact-data-owner">
+    <hr class="contact-data-owner__hr-title">
     <div class="container contact-data-owner__container">
         <h2 class="contact-data-owner__title">Контактные данные (владельца кота)</h2>
-        <form action="" class="contact-data-owner__form">
+        <div class="contact-data-owner__list">
             <div class="contact-data-owner__item">
-                <span class="contact-data-owner__email-text contact-data-owner__data-text">E-mail:*</span>
-                <input type="text" class="contact-data-owner__email-input contact-data-owner__data-input">
+                <label for="email" class="contact-data-owner__email-label contact-data-owner__data-label">E-mail:*</label>
+                <input type="email" id="email" form="data-forms" class="contact-data-owner__email-input contact-data-owner__data-input" placeholder="Ваша электронная почту">
             </div>
             <div class="contact-data-owner__item">
-                <span class="contact-data-owner__email-text contact-data-owner__data-text">Телефон:*</span>
-                <input type="text" class="contact-data-owner__email-input contact-data-owner__data-input">
+                <label for="telephone" class="contact-data-owner__telephone-label contact-data-owner__data-label">Телефон:*</label>
+                <input type="tel" id="telephone" form="data-forms" class="contact-data-owner__email-input contact-data-owner__data-input" placeholder="Ваш номер телефона">
             </div>
-        </form>
+        </div>
     </div>
     </section>
 
     <section class="comment">
+    <hr class="comment__hr-title">
     <div class="container comment__container">
         <h2 class="comment__title">Комментарий</h2>
-        <form action="" class="comment__form">
-            <textarea name="" id="" class="comment__textarea">Расскажите обо всех повадках кота</textarea>
-        </form>
+        <textarea name="comment" id="comment" class="comment__textarea" form="data-forms" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
     </div>
     </section>
 
     <section class="additional">
+    <hr class="additional__hr-title">
     <div class="container additional__container">
         <h2 class="additional__title">Дополнительно</h2>
-        <form action="" class="additional__form">
+        <form action="" id="data-forms" class="additional__form">
             <div class="additional__list-items">
                 <div class="additional__item">
-                    <input type="checkbox" class="additional__inp-sugar additional__input">
-                    <span class="additional__text">сахарозаменитель</span>
+                    <input type="checkbox" id="sugar" name="additional" value="sugar" class="additional__inp-sugar additional__input">
+                    <label for="sugar" class="additional__label">сахарозаменитель</label>
                 </div>
                 <div class="additional__item">
-                    <input type="checkbox" class="additional__inp-water additional__input">
-                    <span class="additional__text">питьевая вода</span>
+                    <input type="checkbox" id="water" name="additional" value="water" class="additional__inp-water additional__input">
+                    <label for="water" class="additional__label">питьевая вода</label>
                 </div>
                 <div class="additional__item">
-                    <input type="checkbox" class="additional__inp-milk additional__input">
-                    <span class="additional__text">молоко</span>
+                    <input type="checkbox" id="milk" name="additional" value="milk" class="additional__inp-milk additional__input">
+                    <label for="milk" class="additional__label">молоко</label>
                 </div>
                 <div class="additional__item">
-                    <input type="checkbox" class="additional__inp-vitamins additional__input">
-                    <span class="additional__text">витамины</span>
+                    <input type="checkbox" id="vitamins" name="additional" value="vitamins" class="additional__inp-vitamins additional__input">
+                    <label for="vitamins" class="additional__label">витамины</label>
                 </div>
             </div>
             <div class="additional__send-container">
-                <button class="additional__button">отправить заявку</button>
+                <button type="submit" class="additional__button">отправить заявку</button>
                 <p class="additional__note">* — Обязательные поля</p>
             </div>
         </form>

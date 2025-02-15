@@ -1,3 +1,7 @@
+.data-pet {
+    margin-bottom: 65px;
+}
+
 
 .data-pet__title {
     font-size: 60px;
@@ -14,14 +18,15 @@
     margin-bottom: 66px;
 }
 
-.data-pet__form {
+.data-pet__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 200px;
 }
 .data-pet__personal-data {
-    width: 568px;
+    width: 50%;
+    padding-right: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -30,30 +35,34 @@
     display: flex;
     align-items: center;
 }
-.data-pet__data-text {
+.data-pet__data-label {
     text-transform: uppercase;
     font-size: 20px;
-    line-height: 29.64px;
     font-weight: 400;
     margin-right: 14px;
     color: #444444;
     white-space: nowrap;
-    /* width: fit-content; */
-    /* width: 100px; */
 }
 .data-pet__data-input {
     width: 100%;
     height: 52px;
     border: 1px solid #E7E7E7;
     color: #444444;
+    padding: 10px 20px;
+    font-size: 20px;
 }
 
-
+.data-pet__hr-top, .data-pet__hr-bottom {
+    display: none;
+    height: 0;
+    width: 0;
+}
 .data-pet__purpose-program {
-    width: 568px;
+    /* width: 568px; */
+    width: 50%;
     height: 200px;
     border: 1px solid #E7E7E7;
-    padding: 25px 0 29px 28px;
+    padding: 25px 0 25px 28px;
     display: flex;
     flex-direction: column;
     gap: 13px;
@@ -66,13 +75,125 @@
 .data-pet__program-input {
     width: 40px;
     height: 40px;
+    display: inline-block;
+
+    appearance: none;
+    padding: 11px;
+    background-clip: content-box;
+    border: 1px solid #CDCDCD;
+    border-radius: 50%;
+    margin-right: 0;
 }
-.data-pet__program-text {
+.data-pet__program-input:checked {
+    background-color: #68B738;
+}
+
+.data-pet__program-label {
     text-transform: uppercase;
     font-size: 20px;
-    line-height: 29.64px;
     font-weight: 400;
     color: #222222;
 }
 
 
+
+.mdl-radio .mdl-radio__button:checked ~ .mdl-radio__outer-circle {
+    border-color: red;
+  }
+
+  .mdl-radio .mdl-radio__button:checked ~ .mdl-radio__inner-circle {
+    background-color: orange;
+  }
+
+  .mdl-radio .mdl-radio__button:checked ~ .mdl-radio__label {
+    color: blue;
+  }
+
+
+@media (max-width: 768px) {
+    .data-pet {
+        margin-bottom: 75px;
+    }
+    .data-pet__title {
+        margin-left: -41px;
+    }
+    .data-pet__content {
+        flex-direction: column;
+        height: unset;
+        gap: 72px;
+    }
+    .data-pet__personal-data {
+        width: 100%;
+        padding: unset;
+    }
+    .data-pet__purpose-program {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .data-pet {
+        margin-bottom: 26px;
+    }
+    .data-pet__title {
+        margin-left: unset;
+        font-size: 36px;
+        margin-bottom: 37px;
+    }
+    .data-pet__description {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 39px;
+    }
+    .data-pet__content {
+        gap: unset;
+    }
+    .data-pet__personal-data {
+        gap: 13px;
+        margin-bottom: 24px;
+    }
+    .data-pet__data-label {
+        font-size: 16px;
+    }
+    .data-pet__data-input {
+        height: 45px;
+        padding: 13px 15px;
+        font-size: 16px;
+    }
+
+    .data-pet__purpose-program {
+        border: unset;
+        padding: 20px 0 22px 0;
+        position: relative;
+        height: unset;
+    }
+
+    .data-pet__hr-top, .data-pet__hr-bottom {
+        display: unset;
+        position: absolute;
+        height: 0;
+        border: unset;
+        border-top: 1px solid #D9D9D9;
+        width: calc(100% + 60px);
+        margin: 0 -30px;
+    }
+    .data-pet__hr-top {
+        top: 0;
+    }
+    .data-pet__hr-bottom {
+        bottom: 0;
+    }
+
+    .data-pet__purpose-program-item {
+        gap: 15px;
+    }
+    .data-pet__program-input {
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+    }
+    .data-pet__program-label {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}

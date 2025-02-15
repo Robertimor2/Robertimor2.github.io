@@ -7,3 +7,29 @@
 @import "./additional.css";
 @import "./map.css";
 @import "./footer.css";
+
+
+.container {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 708px;
+        padding: 0 65px 0 70px;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        padding: 0 40px 0 40px;
+    }
+}
+@media (max-width: 340px) {
+    .container {
+        max-width: 280px;
+        padding: 0 20px;
+        box-sizing: content-box;
+    }
+}

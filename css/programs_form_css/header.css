@@ -108,13 +108,13 @@
     transition: bottom .3s .15s, transform .3s;
 }
 .burger-checkbox:checked + .header__dropdown-btn::before {
-    top: 5.5px;
+    top: 6px;
     transform: rotate(45deg);
     box-shadow: 0 6px 0 rgba(0,0,0,0);
     transition: box-shadow .15s, top .3s, transform .3s .15s;
 }
 .burger-checkbox:checked + .header__dropdown-btn::after {
-    bottom: 9.5px;
+    bottom: 10px;
     transform: rotate(-45deg);
     transition: bottom .3s, transform .3s .15s;
 }
@@ -149,9 +149,10 @@
     line-height: 0;
 }
 
-
-
 @media (max-width: 880px) {
+    .header {
+        margin-bottom: 64px;
+    }
     .header__logo {
         margin-top: 24px;
         width: 174px;
@@ -208,5 +209,12 @@
     .header__menu-link:not(.header__menu-item_selected .header__menu-link):hover:after {
         background-color: #68B738; /* Цвет подчеркивания при появлении линии*/
         left: -3px;
+    }
+}
+@media (max-width: 500px) {
+    .header {
+        padding-bottom: 17px;
+        margin-bottom: 27px;
+        border-bottom: 1px solid #D9D9D9;
     }
 }
