@@ -76,11 +76,11 @@
             <div class="data-pet__personal-data">
                 <div class="data-pet__item">
                     <label for="name" class="data-pet__name-label data-pet__data-label">Имя:*</label>
-                    <input type="text" id="name" name="name" form="data-forms" class="data-pet__name-input data-pet__data-input">
+                    <input type="text" id="name" name="name" form="data-forms" class="data-pet__name-input data-pet__data-input" required>
                 </div>
                 <div class="data-pet__item">
                     <label for="weight" class="data-pet__weight-label data-pet__data-label">Вес (кг):*</label>
-                    <input type="number" id="weight" name="weight" form="data-forms" class="data-pet__weight-input data-pet__data-input">
+                    <input type="number" id="weight" name="weight" form="data-forms" class="data-pet__weight-input data-pet__data-input" required>
                 </div>
                 <div class="data-pet__item">
                     <label for="age" class="data-pet__age-label data-pet__data-label">Возраст (лет):</label>
@@ -114,11 +114,12 @@
         <div class="contact-data-owner__list">
             <div class="contact-data-owner__item">
                 <label for="email" class="contact-data-owner__email-label contact-data-owner__data-label">E-mail:*</label>
-                <input type="email" id="email" form="data-forms" class="contact-data-owner__email-input contact-data-owner__data-input" placeholder="Ваша электронная почту">
+                <input type="email" id="email" form="data-forms" class="contact-data-owner__email-input contact-data-owner__data-input" placeholder="Ваша электронная почта" required>
             </div>
             <div class="contact-data-owner__item">
                 <label for="telephone" class="contact-data-owner__telephone-label contact-data-owner__data-label">Телефон:*</label>
-                <input type="tel" id="telephone" form="data-forms" class="contact-data-owner__email-input contact-data-owner__data-input" placeholder="Ваш номер телефона">
+                <span class="contact-data-owner__num-7">+7</span>
+                <input type="tel" id="telephone" form="data-forms" class="contact-data-owner__telephone-input contact-data-owner__data-input" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </div>
         </div>
     </div>
