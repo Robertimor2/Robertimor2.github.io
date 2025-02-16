@@ -28,20 +28,28 @@
     gap: 78px;
 }
 .contact-data-owner__item {
-    position: relative;
+    /* position: relative; */
     width: 50%;
+    /* display: flex;
+    align-items: center;
+    gap: 15px; */
+}
+
+.form-field-container__contact-data-owner-field {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.contact-data-owner__data-label {
+
+
+.form-field-container__contact-data-owner-lable {
     text-transform: uppercase;
     color: #444444;
     font-size: 20px;
     font-weight: 400;
     white-space: nowrap;
 }
-.contact-data-owner__data-input {
+.form-field-container__contact-data-owner-input {
     width: 100%;
     height: 50px;
     padding: 13px 15px;
@@ -49,16 +57,8 @@
     color: #444444;
     font-size: 20px;
 }
-.contact-data-owner__data-input::placeholder {
+.form-field-container__contact-data-owner-input::placeholder {
     text-transform: uppercase;
-}
-/* .contact-data-owner__telephone-input {
-    padding-left: 25px;
-} */
-.contact-data-owner__num-7 {
-    font-size: 20px; 
-    position: absolute;
-    left: 106px;
 }
 
 
@@ -67,7 +67,7 @@
         flex-direction: column;
         gap: 20px;
     }
-    .contact-data-owner__item, .contact-data-owner__item {
+    .contact-data-owner__item{
         width: 100%;
     }
 }
@@ -94,11 +94,11 @@
     .contact-data-owner__list {
         gap: 14px;
     }
-    .contact-data-owner__data-label {
+    .form-field-container__contact-data-owner-lable {
         font-size: 16px;
         line-height: 18px;
     }
-    .contact-data-owner__data-input {
+    .form-field-container__contact-data-owner-input {
         height: 45px;
         font-size: 16px;
     }

@@ -31,11 +31,14 @@
     flex-direction: column;
     gap: 20px;
 }
-.data-pet__item {
+/* .data-pet__item {
+
+} */
+.form-field-container__data-pet-field {
     display: flex;
     align-items: center;
 }
-.data-pet__data-label {
+.form-field-container__data-pet-lable {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 400;
@@ -43,7 +46,7 @@
     color: #444444;
     white-space: nowrap;
 }
-.data-pet__data-input {
+.form-field-container__data-pet-input {
     width: 100%;
     height: 52px;
     border: 1px solid #E7E7E7;
@@ -152,10 +155,10 @@
         gap: 13px;
         margin-bottom: 24px;
     }
-    .data-pet__data-label {
+    .form-field-container__data-pet-lable {
         font-size: 16px;
     }
-    .data-pet__data-input {
+    .form-field-container__data-pet-input {
         height: 45px;
         padding: 13px 15px;
         font-size: 16px;
