@@ -43,7 +43,7 @@
 }
   
 /* Для отображения span-элемента с ошибкой */
-.form-field-container__error-active {
+.form-field-container__error-active, .form-field-container__telephone-error {
     display: block;
     color: #FF8630;
 }
