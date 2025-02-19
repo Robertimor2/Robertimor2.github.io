@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/index_css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/catalog_css/catalog.css">
     <!-- Шрифт -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,10 +36,10 @@
             </a>
             <nav class="header__menu">
                 <ul class="header__menu-list">
-                    <li class="header__menu-item header__menu-item_selected">
+                    <li class="header__menu-item">
                         <a href="/index.html" class="header__menu-link">ГЛАВНАЯ</a>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item header__menu-item_selected">
                         <a href="/catalog.html" class="header__menu-link">КАТАЛОГ ПРОДУКЦИИ</a>
                     </li>
                     <li class="header__menu-item">
@@ -51,11 +51,11 @@
                     <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                     <label class="header__dropdown-btn" for="burger-checkbox"></label>
                     <ul class="header__dropdown-list hidden-by-display">
-                        <li class="header__menu-item header__menu-item_selected">
+                        <li class="header__menu-item">
                             <a href="/index.html" class="header__menu-link">ГЛАВНАЯ</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="/catalog.html" class="header__menu-link">КАТАЛОГ ПРОДУКЦИИ</a>
+                            <a href="/catalog.html" class="header__menu-link header__menu-item_selected">КАТАЛОГ ПРОДУКЦИИ</a>
                         </li>
                         <li class="header__menu-item">
                             <a href="/programs_form.html" class="header__menu-link">ПОДБОР ПРОГРАММЫ</a>
@@ -66,143 +66,199 @@
         </div>
     </div>
 </header>
+<main>
 
-<main>  
-    <section class="welcome">
-    <div class="container welcome__container">
-        <div class="welcome__title">
-            <h1 class="welcome__title-main-text">Функциональное питание для котов</h1>
-            <h3 class="welcome__title-text">Занялся собой? Займись котом!</h3>
-            <div class="welcome__bg-image"></div>
-            <img src="img/index-can.png" alt="" class="welcome__img-from-mobile">
-            <button class="welcome__title-button">Подобрать программу</button>
-        </div>
-        <div class="welcome__right-image">
-            <img src="img/index-can.png" alt="" class="welcome__img-eat">
-        </div>
-    </div>
-    </section>
-    <section class="catalogs">
-    <div class="container catalogs__container">
-        <div class="card catalogs__card "> 
-            <div class="card__left-content">
-                <div class="card__name">
-                    <img src="icon/cat_pohydenie_card.svg" alt="" class="card__name-icon card__name-icon_loss">
-                    <h2 class="card__name-text">похудение</h2>
+<section class="main-catalog">
+<div class="container main-catalog__container">
+    <h1 class="main-catalog__title">Каталог продукции</h1>
+    <div class="main-catalog__product-list">
+        <div class="product main-catalog__product">
+            <div class="product__background"></div>
+            <img src="./img/catalog/food-1.png" alt="" class="product__img">
+            <h3 class="product__name">Cat Energy PRO <br> 500 г</h3>
+            <div class="product__characteristic">
+                <div class="product__characteristic-item product__mass">
+                    <span class="product__mass-name">Масса</span>
+                    <span class="product__mass-value">500 г</span>
                 </div>
-                <p class="card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <span class="card__type-catalog-container">
-                    <a href="#" class="card__type-catalog"><span class="card__type-catalog-text">каталог slim</span> <img src="icon/icon_arrow.svg" alt="" class="card__arrow-right"></a>
-                </span>
-            </div>
-            <img src="icon/cat_pohydenie_card.svg" alt="" class="card__name-icon-right card__name-icon-right_loss">
-        </div>   
-        <div class="card catalogs__card">
-            <div class="card__left-content">
-                <div class="card__name">
-                    <img src="icon/cat_naborMass_card.svg" alt="" class="card__name-icon card__name-icon_gain">
-                    <h2 class="card__name-text">набор массы</h2>
+                <div class="product__characteristic-item product__taste">
+                    <span class="product__taste-name">Вкус</span>
+                    <span class="product__taste-value">Курица</span>
                 </div>
-                <p class="card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <span class="card__type-catalog-container">
-                    <a href="#" class="card__type-catalog"><span class="card__type-catalog-text">каталог pro</span> <img src="icon/icon_arrow.svg" alt="" class="card__arrow-right"></a>
-                </span>
+                <div class="product__characteristic-item product__price">
+                    <span class="product__price-name">Цена</span>
+                    <span class="product__price-value">700 Р.</span>
+                </div>
             </div>
-            <img src="icon/cat_naborMass_card.svg" alt="" class="card__name-icon-right card__name-icon-right_gain">
-        </div>            
-    </div>
-    </section>
+            <button class="product__button">заказать</button>
+        </div>
 
-    <section class="how-it-works">
-    <div class="container how-it-works__container">
-        <h2 class="how-it-works__title">Как это работает</h2>
-        <div class="info-works how-it-works__info-works">
-            <div class="info-works__item">
-                <img src="icon/info_works_item_1.svg" alt="" class="info-works__icon">
-                <p class="info-works__description">Функциональное питание содержит только полезные питательные вещества.</p>
-                <span class="info-works__bg-num">1</span>
+        <div class="product main-catalog__product">
+            <div class="product__background"></div>
+            <img src="./img/catalog/food-2.png" alt="" class="product__img">
+            <h3 class="product__name">Cat Energy PRO <br> 1000 г</h3>
+            <div class="product__characteristic">
+                <div class="product__characteristic-item product__mass">
+                    <span class="product__mass-name">Масса</span>
+                    <span class="product__mass-value">1000 г</span>
+                </div>
+                <div class="product__characteristic-item product__taste">
+                    <span class="product__taste-name">Вкус</span>
+                    <span class="product__taste-value">Курица</span>
+                </div>
+                <div class="product__characteristic-item product__price">
+                    <span class="product__price-name">Цена</span>
+                    <span class="product__price-value">1000 Р.</span>
+                </div>
             </div>
-            <div class="info-works__item">
-                <img src="icon/info_works_item_2.svg" alt="" class="info-works__icon">
-                <p class="info-works__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-                <span class="info-works__bg-num">2</span>
+            <button class="product__button">заказать</button>
+        </div>
+
+        <div class="product main-catalog__product">
+            <div class="product__background"></div>
+            <img src="./img/catalog/food-3.png" alt="" class="product__img">
+            <h3 class="product__name">Cat Energy PRO <br> 500 г</h3>
+            <div class="product__characteristic">
+                <div class="product__characteristic-item product__mass">
+                    <span class="product__mass-name">Масса</span>
+                    <span class="product__mass-value">500 г</span>
+                </div>
+                <div class="product__characteristic-item product__taste">
+                    <span class="product__taste-name">Вкус</span>
+                    <span class="product__taste-value">Рыба</span>
+                </div>
+                <div class="product__characteristic-item product__price">
+                    <span class="product__price-name">Цена</span>
+                    <span class="product__price-value">700 Р.</span>
+                </div>
             </div>
-            <div class="info-works__item">
-                <img src="icon/info_works_item_3.svg" alt="" class="info-works__icon">
-                <p class="info-works__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-                <span class="info-works__bg-num">3</span>
+            <button class="product__button">заказать</button>
+        </div>
+
+        <div class="product main-catalog__product">
+            <div class="product__background"></div>
+            <img src="./img/catalog/food-4.png" alt="" class="product__img">
+            <h3 class="product__name">Cat Energy PRO <br> 1000 г</h3>
+            <div class="product__characteristic">
+                <div class="product__characteristic-item product__mass">
+                    <span class="product__mass-name">Масса</span>
+                    <span class="product__mass-value">1000 г</span>
+                </div>
+                <div class="product__characteristic-item product__taste">
+                    <span class="product__taste-name">Вкус</span>
+                    <span class="product__taste-value">Рыба</span>
+                </div>
+                <div class="product__characteristic-item product__price">
+                    <span class="product__price-name">Цена</span>
+                    <span class="product__price-value">1000 Р.</span>
+                </div>
             </div>
-            <div class="info-works__item">
-                <img src="icon/info_works_item_4.svg" alt="" class="info-works__icon">
-                <p class="info-works__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-                <span class="info-works__bg-num">4</span>
+            <button class="product__button">заказать</button>
+        </div>
+
+        <div class="product main-catalog__product">
+            <div class="product__background"></div>
+            <img src="./img/catalog/food-5.png" alt="" class="product__img">
+            <h3 class="product__name">Cat Energy PRO <br> 500 г</h3>
+            <div class="product__characteristic">
+                <div class="product__characteristic-item product__mass">
+                    <span class="product__mass-name">Масса</span>
+                    <span class="product__mass-value">500 г</span>
+                </div>
+                <div class="product__characteristic-item product__taste">
+                    <span class="product__taste-name">Вкус</span>
+                    <span class="product__taste-value">Гречка</span>
+                </div>
+                <div class="product__characteristic-item product__price">
+                    <span class="product__price-name">Цена</span>
+                    <span class="product__price-value">400 Р.</span>
+                </div>
+            </div>
+            <button class="product__button">заказать</button>
+        </div>
+
+        <div class="product main-catalog__product">
+            <div class="product__background"></div>
+            <img src="./img/catalog/food-6.png" alt="" class="product__img">
+            <h3 class="product__name">Cat Energy PRO <br> 1000 г</h3>
+            <div class="product__characteristic">
+                <div class="product__characteristic-item product__mass">
+                    <span class="product__mass-name">Масса</span>
+                    <span class="product__mass-value">1000 г</span>
+                </div>
+                <div class="product__characteristic-item product__taste">
+                    <span class="product__taste-name">Вкус</span>
+                    <span class="product__taste-value">Гречка</span>
+                </div>
+                <div class="product__characteristic-item product__price">
+                    <span class="product__price-name">Цена</span>
+                    <span class="product__price-value">700 Р.</span>
+                </div>
+            </div>
+            <button class="product__button">заказать</button>
+        </div>
+
+        <div class="product main-catalog__product">
+            <div class="product__background"></div>
+            <img src="./img/catalog/food-7.png" alt="" class="product__img">
+            <h3 class="product__name">Cat Energy PRO <br> 500 г</h3>
+            <div class="product__characteristic">
+                <div class="product__characteristic-item product__mass">
+                    <span class="product__mass-name">Масса</span>
+                    <span class="product__mass-value">500 г</span>
+                </div>
+                <div class="product__characteristic-item product__taste">
+                    <span class="product__taste-name">Вкус</span>
+                    <span class="product__taste-value">Рис</span>
+                </div>
+                <div class="product__characteristic-item product__price">
+                    <span class="product__price-name">Цена</span>
+                    <span class="product__price-value">500 Р.</span>
+                </div>
+            </div>
+            <button class="product__button">заказать</button>
+        </div>
+
+        <div class="product product_show-all main-catalog__product">
+            <div class="product__background product__background_show-all"></div>
+            <img src="./icon/plus.svg" alt="" class="product__plus">
+            <h3 class="product__name product__name_show-all">Показать еще <br> 100500 товаров</h3>
+            <p class="product__description">На самом деле вкусов гораздо больше!</p>
+            <button class="product__button product__button_show-all">показать все</button>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section class="additional-products">
+<hr class="additional-products__hr-title">
+<div class="container additional-products__container">
+    <h2 class="additional-products__title">Дополнительные товары</h2>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0ce410f3ad85959008a663b106bcf18e5966f63ea0db7b7104eed2f51c997f84&amp;source=constructor" width="100%" height="400" frameborder="0" class="map_iframe"></iframe>
+    <div class="container map__container">
+        <div class="map__invite">
+            <h3 class="map__title">приглашаем <br> к сотрудничеству дилеров!</h3>
+            <div class="map__address">
+                <p class="map__street">ул. Большая Конюшенная, д. 19/8</p>
+                <p class="map__city">Санкт-Петербург</p>
             </div>
         </div>
     </div>
-    </section>
-    
-    <section class="before-after">
-    <div class="container before-after__title-container">
-        <h2 class="before-after__title">Живой пример</h2>
-    </div>
-    <div class="background">
-        <div class="background__bottom"></div>
-    </div>
-    
-    <div class="container before-after__container-info">
-        <div class="before-after__info">
-            <div class="before-after__characteristics">
-                <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-                <div class="before-after__container-from-mass-and-days-and-costs">
-                    <div class="before-after__mass-and-days">
-                        <div class="before-after__mass before-after__mass-and-days-container">
-                            <h3 class="before-after__kg-title before-after__mass-and-days-title">5 КГ</h3>
-                            <p class="before-after__kg-text before-after__mass-and-days-text">снижение веса</p>
-                        </div>
-                        <div class="before-after__days before-after__mass-and-days-container">
-                            <h3 class="before-after__days-title before-after__mass-and-days-title">60 ДНЕЙ</h3>
-                            <p class="before-after__days-text before-after__mass-and-days-text">затрачено времени</p>
-                        </div>
-                    </div>
-                    <div class="before-after__food-costs">
-                        <h3 class="before-after__food-costs-title">Затраты на питание: </h3>
-                        <p class="before-after__food-costs-text">15 000 РУБ.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="slider before-after__slider">
-                <div class="slider__wrapper">
-                    <div class="slider__cats">
-                        <img src="img/fat_cat.jpg" alt="" class="slider__cat-image slider__cat-before-img">
-                        <img src="img/slim_cat.jpg" alt="" class="slider__cat-image slider__cat-after-img">
-                    </div>
-                    <div class="slider-line slider__slider-line">
-                        <span class="slider-line__before-text">Было</span>
-                        <form action="" method="get" class="slider__bar-form">
-                            <label for="slider-bar-range"></label>
-                            <input type="range" min="0" max="100" value="50" class="slider__bar-range" id="slider-bar-range">
-                        </form>
-                        <span class="slider-line__after-text">Стало</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-    <section class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0ce410f3ad85959008a663b106bcf18e5966f63ea0db7b7104eed2f51c997f84&amp;source=constructor" width="100%" height="400" frameborder="0" class="map_iframe"></iframe>
-        <div class="container map__container">
-            <div class="map__invite">
-                <h3 class="map__title">приглашаем <br> к сотрудничеству дилеров!</h3>
-                <div class="map__address">
-                    <p class="map__street">ул. Большая Конюшенная, д. 19/8</p>
-                    <p class="map__city">Санкт-Петербург</p>
-                </div>
-            </div>
-        </div>
-    </section>
+</section>
 </main>
-
 <footer class="footer">
 <div class="container footer__container">
     <img src="icon/footer_logo_catEnergy.svg" alt="" class="footer__logo">
@@ -232,6 +288,7 @@
 </div>
 </footer>
 
-<script type="module" src="js/index/index_js.js"></script>
+
+<script type="module" src="js/catalog/catalog.js"></script>
 </body>
 </html>

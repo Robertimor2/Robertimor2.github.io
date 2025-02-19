@@ -1,0 +1,21 @@
+.additional-products {
+    position: relative;
+}
+.additional-products__hr-title {
+    position: absolute;
+    top: 23px;
+    border: unset;
+    height: 0;
+    width: 100%;
+    border-top: 2px solid #68B738;
+    z-index: -1;
+}
+.additional-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    width: fit-content;
+    padding: 0 40px;
+    margin-left: -40px;
+    background-color: #FFFFFF;
+}
