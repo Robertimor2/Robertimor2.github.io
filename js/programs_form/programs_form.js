@@ -3,7 +3,6 @@
 
 // < Функции для валидации поля с номером телефона.......
 function setCursorPosition(pos, e) {
-    e.focus();
     if (e.setSelectionRange) e.setSelectionRange(pos, pos);
     else if (e.createTextRange) {
       let range = e.createTextRange();

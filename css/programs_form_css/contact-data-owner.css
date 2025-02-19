@@ -1,0 +1,105 @@
+.contact-data-owner {
+    position: relative;
+    margin-bottom: 69px;
+}
+.contact-data-owner__hr-title {
+    position: absolute;
+    top: 23px;
+    border: unset;
+    height: 0;
+    width: 100%;
+    border-top: 2px solid #68B738;
+    z-index: -1;
+}
+.contact-data-owner__title {
+    width: fit-content;
+    padding: 0 40px;
+    margin-left: -40px;
+    background-color: #FFFFFF;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 76px;
+}
+.contact-data-owner__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 78px;
+}
+.contact-data-owner__item {
+    /* position: relative; */
+    width: 50%;
+    /* display: flex;
+    align-items: center;
+    gap: 15px; */
+}
+
+.form-field-container__contact-data-owner-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.form-field-container__contact-data-owner-lable {
+    text-transform: uppercase;
+    color: #444444;
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.form-field-container__contact-data-owner-input {
+    width: 100%;
+    height: 50px;
+    padding: 13px 15px;
+    border: 1px solid #CDCDCD;
+    color: #444444;
+    font-size: 20px;
+}
+.form-field-container__contact-data-owner-input::placeholder {
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 768px) {
+    .contact-data-owner__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-data-owner__item{
+        width: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .contact-data-owner__title {
+        width: 351px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-data-owner {
+        margin-bottom: 27px;
+    }
+    .contact-data-owner__hr-title {
+        top: 15px;
+    }
+    .contact-data-owner__title {
+        width: 262px;
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 32px;
+    }
+    .contact-data-owner__list {
+        gap: 14px;
+    }
+    .form-field-container__contact-data-owner-lable {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .form-field-container__contact-data-owner-input {
+        height: 45px;
+        font-size: 16px;
+    }
+}

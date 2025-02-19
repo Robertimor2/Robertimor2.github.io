@@ -1,0 +1,90 @@
+.map {
+    height: 400px;
+    position: relative;
+}
+.map_iframe {
+    position: absolute;
+}
+.map__container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.map__invite {
+    position: relative;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    width: 570px;
+    height: 201px;
+    align-items: center;
+}
+.map__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 21px;
+    max-width: 163px;
+}
+.map__address {
+    width: 155px;
+}
+.map__street, .map__city {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+}
+.map__street {
+    margin-bottom: 19.11px;
+}
+
+@media (max-width: 900px) {
+    .map {
+        height: unset;
+        position: unset;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .map__container {
+        padding: 28px 19px 22px 19px;
+    }
+    .map_iframe {
+        position: unset;
+        height: 362px;
+    }
+    .map__invite {
+        justify-content: space-between;
+        gap: 50px;
+        padding: unset;
+        width: 100%;
+        height: unset;
+    }
+}
+
+@media (max-width: 900px) {
+    .map {
+        background-color: #F2F2F2;
+    }
+    .map__invite {
+        background-color: unset;
+        padding: 65px 0;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .map__invite {
+        gap: unset; 
+        padding: 28px 0;
+    }
+    .map__title {
+        font-size: 16px;
+        line-height: 18px;
+        max-width: 140px;
+    }
+    .map__street, .map__city {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
