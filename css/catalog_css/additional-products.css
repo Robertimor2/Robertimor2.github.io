@@ -1,5 +1,6 @@
 .additional-products {
     position: relative;
+    margin-bottom: 86px;
 }
 .additional-products__hr-title {
     position: absolute;
@@ -18,4 +19,83 @@
     padding: 0 40px;
     margin-left: -40px;
     background-color: #FFFFFF;
+    margin-bottom: 81px;
+}
+
+.additional-products__content {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    grid-template-rows: 289px;
+    column-gap: 79px;
+}
+.additional-products__products-list {
+    display: grid;
+    box-sizing: content-box;
+    grid-template-rows: repeat(3, auto);
+    width: 100%;
+}
+.additional-products__product-item {
+    box-sizing: content-box;
+    padding: 15px 0 17px 0;
+    border-bottom: 1px solid #CDCDCD;
+    display: grid;
+    grid-template-columns: 161px 132px auto 244px;
+    justify-content: space-between;
+    align-items: center;
+}
+.additional-products__product-item:first-child {
+    border-top: 1px solid #CDCDCD;
+}
+.additional-products__product-name {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.additional-products__product-quantity {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #444444;
+}
+.additional-products__product-price {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #444444; 
+}
+.additional-products__product-button {
+    height: fit-content;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 10px 0;
+    background-color: #68B738;
+}
+
+
+
+.additional-products__gift {
+    background-image: url("../../img/catalog/gift-photo.jpg");
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 46px;
+}
+.additional-products__gift-icon {
+    text-align: center;
+    margin: 0 auto;
+}
+.additional-products__gift-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    width: 161px;
+    text-align: center; 
 }
