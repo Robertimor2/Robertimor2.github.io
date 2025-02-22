@@ -75,12 +75,21 @@
     color: #FFFFFF;
     padding: 10px 0;
     background-color: #68B738;
+    transition: background-color 0.4s, box-shadow 0.2s 0.3s;
+}
+.additional-products__product-button:hover {
+    background-color: #3f8a7c;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3f8a7c;
 }
 
 
 
 .additional-products__gift {
-    background-image: url("../../img/catalog/gift-photo.jpg");
+    /* background-image: url("../../img/catalog/gift-photo.jpg"); */
+    background: url("../../img/catalog/gift-photo.jpg") no-repeat center center/cover;
+    /* background-repeat: no-repeat;
+    background-size: 100%;
+    background-clip:border-box; */
     display: grid;
     align-items: center;
     align-content: center;
@@ -98,4 +107,144 @@
     font-weight: 400;
     width: 161px;
     text-align: center; 
+}
+
+
+@media (max-width: 1000px) {
+    .additional-products__content {
+        column-gap: 20px;
+    }
+    .additional-products__product-item {
+        grid-template-columns: 161px 2fr 1fr 1fr
+    }
+    .additional-products__product-quantity {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .additional-products__content {
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+        row-gap: 69px;
+    }
+    .additional-products__products-list {
+        border: 1px solid #CDCDCD;
+        /* padding: 0 38px; */
+    }
+    .additional-products__product-item {
+        grid-template-columns: auto auto 44px;
+        /* grid-template-columns: max-content max-content max-content; */
+        grid-template-rows: auto auto;
+        padding: 26px 38px 28px 38px;
+        row-gap: 25px;
+        column-gap: 50px;
+        justify-content: unset;
+        /* text-align: right; */
+    }
+    .additional-products__product-item:first-child {
+        border-top: unset
+    }
+    .additional-products__product-item:last-child {
+        border-bottom: unset
+    }
+    .additional-products__product-quantity, .additional-products__product-price {
+        justify-self: end;
+    }
+    .additional-products__product-button {
+        grid-column: span 3;
+    }
+    .additional-products__gift {
+        background: url("../../img/catalog/gift-photo-tablet.jpg") no-repeat center center/cover;
+        height: 200px;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: repeat(2, auto);
+        padding: 0 124px 0 78px;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 610px) {
+    .additional-products__product-item {
+        column-gap: 20px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .additional-products__products-list {
+        border: unset;
+        row-gap: 12px;
+    }
+    .additional-products__product-item {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        padding: unset;
+        padding-bottom: 19px;
+        border-bottom: 1px solid #CDCDCD;
+    }
+    .additional-products__product-item:first-child {
+        padding-top: 13px;
+        border-top: 1px solid #CDCDCD;
+    }
+    .additional-products__product-item:last-child {
+        border-bottom: 1px solid #CDCDCD;
+    }
+    .additional-products__product-quantity {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: start;
+        padding-left: unset;
+    }
+    .additional-products__product-price {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .additional-products__product-button {
+        grid-column: span 2;
+    }
+}
+@media (max-width: 510px) {
+    .additional-products {
+        margin-bottom: 35px;
+    }
+    .additional-products__hr-title {
+        top: 14px;
+    }
+    .additional-products__content {
+        row-gap: 39px;
+    }
+    .additional-products__title {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 35px;
+    }
+    .additional-products__product-item {
+        column-gap: unset;
+        row-gap: 13px;
+    }
+    .additional-products__product-name {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .additional-products__product-quantity {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    
+    .additional-products__gift {
+        background: url(../../img/catalog/gift-photo-mobile.png) no-repeat center center / cover;
+        padding: unset;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        row-gap: 48px;
+        height: 289px;
+        justify-content: center;
+    }
+    .additional-products__gift-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
