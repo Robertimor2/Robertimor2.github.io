@@ -96,7 +96,6 @@
     .footer__container {
         flex-direction: column;
         align-items: center;
-        /* height: inherit; */
         height: 100%;
     }
     .footer__main-logo-container {

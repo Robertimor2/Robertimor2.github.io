@@ -1,5 +1,5 @@
 .how-it-works {
-    margin-bottom: 11px;
+    margin-bottom: 143px;   /* 70 + 60 + 13 */
 }
 
 .how-it-works__title {
@@ -41,6 +41,11 @@
     line-height: 280px;
 }
 
+@media (max-width: 1050px) {
+    .how-it-works {
+        margin-bottom: 47px;
+    }
+}
 
 @media (max-width: 960px) {
     .how-it-works {

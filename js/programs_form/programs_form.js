@@ -132,24 +132,7 @@ function startValidation() {
     })
 }
 
-// let a = "+"
-// let b = 2
-// let res = a + 1
-// console.log(res);
-// console.log(typeof res);
-// console.log(Number(res));
-// console.log("_", Number("_"));
-// console.log(typeof Number("_"));
 
-// let n1 = Number("_")
-// console.log(Number("_") == NaN);
-// console.log(Number("5") == NaN);
-// if (Number(a)) {
-//     console.log(`${a} это число`);
-// } 
-// else if (!Number(a)) {
-//     console.log(`${a} это НЕ число`);
-// }
 // Сначала проверяется задан ли для поля ввода определённый паттерн и установлена ли минимальная длина. Если паттерн задан и не совпадает с введёнными данными, то с помощью функции setCustomValidity передаётся кастомное сообщение об ошибке, хранящееся в атрибуте data-error-message. В случае соответствия введённых данных паттерну, с помощью функции checkLengthMismatch() также проверяется длина введённых данных, очищенная от пробелов. Если сообщение больше установленного количества символов и не пустое, то сообщение об ошибке не передаётся, в ином случае — пользователь получает сообщение с минимально необходимым количеством символов.
 // В функции toggleInputError() реализована стандартная проверка: если свойство input.validity.valid равно false, выводится сообщение об ошибке, а если true — ошибка убирается.
 function checkInputValidity(inputElement) {

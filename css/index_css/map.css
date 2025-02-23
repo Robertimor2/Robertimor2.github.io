@@ -47,7 +47,6 @@
         flex-direction: column-reverse;
     }
     .map__container {
-        padding: 28px 19px 22px 19px;
         width: unset;
     }
     .map_iframe {
@@ -57,7 +56,7 @@
     .map__invite {
         gap: 50px;
         margin: 0 auto;
-        padding: unset;
+        padding: 28px 19px 22px 19px;
         width: unset;
         height: unset;
     }

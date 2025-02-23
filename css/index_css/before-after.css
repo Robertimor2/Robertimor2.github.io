@@ -5,14 +5,12 @@
     position: absolute;
     width: 100%;
     height: 462px;
-    /* top: 262px; */
     left: 0;
     z-index: -1;
     background-color: #F2F2F2;
 }
 .before-after__title-container {
-    margin-top: 69px;
-    margin-bottom: 76px;
+    margin-bottom: 76px !important;
 }
 
 
@@ -71,7 +69,7 @@
 
 
 .before-after__mass-and-days-text {
-    background-color: #FFFFFF;
+    background-color: #F2F2F2;
     box-sizing: content-box;
     width: fit-content;
     padding: 0 7px;
@@ -198,12 +196,16 @@
 
 
 @media (max-width: 1050px) {
+    .before-after {
+        padding-top: 43px;
+        border-top: 1px solid #E6E6E6;
+        padding-bottom: 67px;
+    }
     .before-after .background {
         bottom: 0;
     }
     .before-after__title-container {
-        margin-top: 90px;
-        margin-bottom: 63px;
+        margin-bottom: 63px !important;
     }
     .before-after__container-info {
         padding-bottom: 64px;
@@ -227,6 +229,9 @@
     }
     .before-after__mass-and-days {
         margin-bottom: unset;
+    }
+    .before-after__mass-and-days-text {
+        background-color: #FFFFFF;
     }
     .before-after__food-costs {
         flex-direction: column;
@@ -257,6 +262,15 @@
 }
 
 @media (max-width: 680px) {
+    .before-after {
+        padding-bottom: unset;
+    }
+    .before-after .background {
+        height: 320px;
+    }
+    .before-after__container-info {
+        height: 800px;
+    }
     .before-after__container-from-mass-and-days-and-costs {
         flex-direction: column;
     }
@@ -273,14 +287,23 @@
     }
 }
 
+@media (max-width: 615px) {
+    .before-after__container-info {
+        height: 810px;
+    }
+}
+
 @media (max-width: 500px) {
     .before-after {
-        padding-top: unset;
+        padding-top: 27px;
         border: unset;
     }
     .before-after .background {
         height: 100%;
         background-color: #EAEAEA;
+    }
+    .before-after__container-info {
+        height: unset;
     }
     .before-after__title-container {
         margin-top: unset;
@@ -306,6 +329,9 @@
     }
 }
 @media (max-width: 385px) {
+    .before-after {
+        padding-bottom: 29px;
+    }
     .before-after__title-container {
         margin-bottom: 33px;
     }

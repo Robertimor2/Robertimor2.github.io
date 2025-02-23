@@ -85,11 +85,7 @@
 
 
 .additional-products__gift {
-    /* background-image: url("../../img/catalog/gift-photo.jpg"); */
     background: url("../../img/catalog/gift-photo.jpg") no-repeat center center/cover;
-    /* background-repeat: no-repeat;
-    background-size: 100%;
-    background-clip:border-box; */
     display: grid;
     align-items: center;
     align-content: center;
@@ -130,17 +126,14 @@
     }
     .additional-products__products-list {
         border: 1px solid #CDCDCD;
-        /* padding: 0 38px; */
     }
     .additional-products__product-item {
         grid-template-columns: auto auto 44px;
-        /* grid-template-columns: max-content max-content max-content; */
         grid-template-rows: auto auto;
         padding: 26px 38px 28px 38px;
         row-gap: 25px;
         column-gap: 50px;
         justify-content: unset;
-        /* text-align: right; */
     }
     .additional-products__product-item:first-child {
         border-top: unset
@@ -157,7 +150,6 @@
     .additional-products__gift {
         background: url("../../img/catalog/gift-photo-tablet.jpg") no-repeat center center/cover;
         height: 200px;
-        /* grid-template-columns: 1fr 1fr; */
         grid-template-columns: repeat(2, auto);
         padding: 0 124px 0 78px;
         justify-content: space-between;

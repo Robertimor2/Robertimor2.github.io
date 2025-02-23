@@ -31,9 +31,7 @@
     flex-direction: column;
     gap: 20px;
 }
-/* .data-pet__item {
 
-} */
 .form-field-container__data-pet-field {
     display: flex;
     align-items: center;
@@ -61,7 +59,6 @@
     width: 0;
 }
 .data-pet__purpose-program {
-    /* width: 568px; */
     width: 50%;
     height: 200px;
     border: 1px solid #E7E7E7;
